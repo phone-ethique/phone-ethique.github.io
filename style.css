@@ -969,3 +969,137 @@ ul.vendre {
 .choixlangue {
     display: none;
 }
+
+.paniera {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000c7;
+    top: 0;
+    left: 0;
+    font-family: "Aileron";
+}
+
+#bla {
+    background-color: white;
+    width: 600px;
+    /* height: 100%; */
+    margin: 50px;
+    /* margin: 150px auto; */
+    /* border-radius: 50px; */
+    padding: 20px 0;
+    float: right;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+}
+
+.suggestions {
+    border-right: 1px solid #000;
+    text-align: center;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.suggestions > div > div {
+    box-sizing: border-box;
+    margin: 10px auto;
+    background-color: #57b0a6;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    padding: 15px;
+    text-transform: uppercase;
+
+}
+
+.suggestions > div > div img {
+    height: 50%;
+    width: auto;
+    margin: auto;
+}
+
+.suggestions > div > div {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.suggestions > div > div p {
+    margin: 0;
+}
+
+.suggestions > div .highlight {
+    /* width: 150px; */
+    box-sizing: border-box;
+    border-radius: 50px;
+    font-size: 15px;
+}
+
+.paniera .highlight {
+    border-radius: 50px;
+}
+
+.selection {
+    text-transform: uppercase;
+    width: 100%;
+    padding: 20px 50px;
+}
+
+.selection h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.qwe {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.payer {
+    text-align: center;
+}
+
+.payer a {
+    text-transform: none;
+}
+
+.article {
+    display: inline-block;
+}
+
+.article input {
+    width: 50px;
+    border-radius: 40px;
+    border: 1px solid #b8b8b8;
+    padding: 5px;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.article h2 {
+    margin-bottom: 5px;
+}
+
+.article p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.liste_panier {
+    overflow-y: scroll;
+    max-height: 600px;
+}
+
+.croix {
+    float: left;
+    width: 20px;
+    margin-top: 34px;
+}
