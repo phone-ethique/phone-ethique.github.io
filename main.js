@@ -16,6 +16,10 @@ if (lang == "as") {
 
     const lang_text = document.querySelector(".langue p")
     lang_text.innerText = "AS"
+
+    const lang_option = document.querySelector("#localisation")
+    lang_option.value = "as"
+
 }
 
 
