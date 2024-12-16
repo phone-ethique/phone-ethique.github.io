@@ -191,6 +191,7 @@ function new_article (key, name, price, number) {
 function refresh_cart() {
     var total_articles = 0
     var liste_panier = document.querySelector(".liste_panier")
+    var nombre_panier = document.querySelector(".panier span")
 
     liste_panier.innerHTML = ""
 
@@ -205,6 +206,7 @@ function refresh_cart() {
     total_price = Math.round(total_price * 100) / 100;
     
     document.querySelector("#priceqwe").innerText = total_price
+    nombre_panier.innerText = total_articles
 }
 
 function set_article(article_name, number) {

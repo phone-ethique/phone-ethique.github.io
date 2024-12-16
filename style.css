@@ -1114,3 +1114,25 @@ ul.vendre {
 .vendre li {
     margin-left: 0;
 }
+
+.panier {
+    position: relative;
+}
+
+.panier span {
+    color: white;
+    position: absolute;
+    right: 5px;
+    top: -5px;
+    background-color: #56b0a6;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.produit.accessoire {
+    cursor: pointer;
+}
