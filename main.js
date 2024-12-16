@@ -8,9 +8,7 @@ if (lang == "as") {
     });
     
     const fr = document.querySelectorAll(".fr") ;
-    console.log(fr)
     fr.forEach(element => {
-        console.log(element)
         element.style.display = "none"
     });
 
@@ -64,9 +62,6 @@ croix.addEventListener("click", function(e) {
 }, false)
 
 
-
-
-// add_article('coque-eco-phone')
 refresh_cart()
 
 });
@@ -159,13 +154,6 @@ function init_cart() {
             },
         }
     }
-
-
-    for (const [key, value] of Object.entries(articles)) {
-        total_articles += value.number;
-    }
-
-
     save_cart()
 }
 
@@ -173,7 +161,7 @@ function save_cart(){
     localStorage.setItem('articles', JSON.stringify(articles));
 }
 
-function new_article (name, price, number) {
+function new_article (key, name, price, number) {
     const article = document.createElement("div");
     const title = document.createElement("h2")
     const price_text = document.createElement("p")
@@ -182,24 +170,40 @@ function new_article (name, price, number) {
     article.classList.add("article")
     title.innerText = name
     article.appendChild(title)
-    price_text.innerText = price
+    price_text.innerText =  price + ' €'; 
     article.appendChild(price_text)
     input_number.value = number
     input_number.type="number"
+    input_number.id = key
+
+    input_number.addEventListener("change", function(e) {
+        set_article(key, e.target.value)
+        console.log(e)
+    }, false)
+
     article.appendChild(input_number)
 
+    
     var liste_panier = document.querySelector(".liste_panier")
     liste_panier.appendChild(article)
 }
 
 function refresh_cart() {
+    var total_articles = 0
+    var liste_panier = document.querySelector(".liste_panier")
+
+    liste_panier.innerHTML = ""
+
     var total_price = 0
     for (const [key, value] of Object.entries(articles)) {
-        if (value.number) {
-            new_article (value.name, value.price, value.number)
+        if (value.number > 0) {
+            new_article (key, value.name, value.price, value.number)
             total_price += value.price * value.number
+            total_articles += value.number
         }
     }
+    total_price = Math.round(total_price * 100) / 100;
+    
     document.querySelector("#priceqwe").innerText = total_price
 }
 

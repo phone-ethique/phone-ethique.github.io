@@ -1106,3 +1106,11 @@ ul.vendre {
     width: 20px;
     margin-top: 34px;
 }
+
+.ajout.highlight {
+    cursor: pointer;
+}
+
+.vendre li {
+    margin-left: 0;
+}
