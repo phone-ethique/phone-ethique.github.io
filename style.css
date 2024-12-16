@@ -1,0 +1,971 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: Aileron;
+    src: url(fonts/aileron/Aileron-Regular.otf);
+}
+
+@font-face {
+    font-family: "Now";
+    src: url(fonts/now/Now-Regular.otf);
+}
+
+@font-face {
+    font-family: "Now bold";
+    src: url(fonts/now/Now-Bold.otf);
+}
+
+body {
+    margin: 0;
+    font-family: "Barlow", sans-serif;
+    font-style: normal;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.highlight {
+    background-color: #41b8d5;
+    color: white;
+    border-radius: 15px;
+    padding: 10px 25px;
+    display: inline-block;
+    font-weight: bold;
+    font-family: "Aileron";
+    margin: 0;
+    font-size: 20px;
+}
+
+.highlight.orange {
+    background-color: #ff9900;
+}
+
+.highlight.blue {
+    background-color: #38b6ff;
+}
+
+.circle {
+    aspect-ratio : 1 / 1;
+    display: flex;
+    align-items: center;
+    height: 150px;
+    padding: 5px;
+    /* height: 100px; */
+    border-radius: 100%;
+    background-color: #ff9900;
+    
+}
+
+.circle p {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+header .content > div {
+    display: flex;
+}
+
+
+header .content > div > a:last-child {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    min-height: 10vh;
+}
+
+.menu li a.select {
+    color: #99b54f;
+}
+
+
+.content {
+    max-width: 1080px;
+    margin: auto;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+.menu li a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.panier img, .langue img {
+    width: 20px;
+}
+
+.panier img {
+    vertical-align: middle;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.langue * { 
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Aileron";
+    color: #4c5270;
+    vertical-align: middle;
+    margin: 0;
+}
+
+footer {
+    background-color: #41b8d5;
+    padding: 50px 50px ;
+    padding-bottom: 20px;
+    font-family: "Open Sans", sans-serif;
+}
+
+footer > .content > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h1 {
+    font-size: 20px;
+}
+
+footer li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+footer li img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.certif {
+    width: 200px;
+}
+
+footer .reseaux img {
+    height: 20px;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+
+footer .logo img {
+    width : 150px;
+}
+
+footer > .content > div:last-child {
+    margin: 10px 50px;
+    margin-left: 10px;
+    margin-right: 50px;
+}
+
+.promo {
+    background-color: #57b0a6;
+    
+    /* min-height: 500px; */
+    /* padding: 100px; */
+    position: relative;
+}
+
+.promo .content {
+    background-image: url("img/main.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: auto 90%;
+    position: relative;
+}
+
+.promo img {
+    width: 150px;
+    float: left;
+    margin-left: -35px;
+}
+
+.promo_content {
+    text-align: right;
+    padding: 100px 100px;
+}
+
+.promo_content h1 {
+    color: white;
+    font-size: 60px;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.promo_content .small {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.promo .circle {
+    position: absolute;
+    left: 15%;
+    bottom: 20%;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 700px;
+}
+
+.categories h1 {
+    margin-top: 0;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.categories .card {
+    padding: 30px;
+    width: 50%;
+    height: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    /* margin: 40px; */
+}
+
+.categories .card p {
+    border: 1px solid #000;
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin-top: 25px;
+    font-size: 25px;
+}
+
+.categories .card img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.categories .card:first-child{
+    background-color: #9ab54d;
+    margin-left: 100px;
+    margin-right: 20px;
+}
+
+.categories .card:last-child{
+    background-color: #56b0a6;
+    margin-left: 20px;
+    margin-right: 100px;
+}
+
+.affaires {
+    font-family: "Aileron";
+    position: relative;
+    margin-bottom: 30px;
+    /* margin: 10px 100px; */
+}
+
+.affaires h1 {
+    font-size: 50px;
+    font-family: "Now bold";
+    font-weight: bold;
+}
+
+.affaires > div {
+    width: 40%;
+}
+
+
+.affaires div img {
+    border-radius: 20px;
+    width: 400px;
+}
+
+.affaires > img {
+    border-radius: 10px;
+    position: absolute;
+    height: 400px;
+    top: 50px;
+    right: 10px;
+    z-index: -1;
+}
+
+.affaires div p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.prefere {
+    font-family: "Now bold";
+    background-color: #99b54f;
+    padding: 30px 100px;
+}
+
+.prefere h1 {
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.prefere > div > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 100%; */
+
+}
+
+.prefere h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.prefere p {
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.prefere .prix {
+    font-size: 30px;
+    margin-top: 100px;
+}
+
+.prefere .highlight {
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.prefere > div > div div:last-child {
+    width: 50%;
+    text-align: center;
+}
+
+.prefere > div > div div:last-child img {
+    background-color: white;
+    border-radius: 20px;
+    max-width: 50%;
+    padding: 20px;
+}
+
+
+main.grey {
+    background-color: #e8e7e7;
+    padding: 60px 0;
+}
+
+.grey h1 {
+    font-family: "Now bold";
+    text-transform: uppercase;
+}
+
+.grey p, .grey li {
+    font-family: "Aileron";
+}
+
+.grey ul {
+    margin-top: -16px;
+}
+
+.grey li {
+    margin-left: 20px;
+}
+
+.categories.acheter {
+    height: 500px;
+}
+
+.produit {
+    /* width: 33%; */
+    /* display: flex; */
+    /* align-items: center; */
+    margin: 10px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    display: inline-block;
+    height: 400px;
+}
+
+.produit img {
+    height: 65%;
+}
+
+.produit .nom {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.produit .highlight {
+    background-color: #38b6ff;
+    font-family: "Now";
+}
+
+.produits {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* justify-content: space-between; */
+}
+
+.accessoire {
+    background-color: #57b0a6;
+}
+
+.smartphone {
+    background-color: #99b54f;
+}
+
+.ensemble {
+    background-image: url("img/enemble.jpg");
+    background-size: contain;
+    background-position: bottom;
+    height: 70vh;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.ensemble .content {
+    position: relative;
+    height: 100%;
+}
+
+.ensemble h1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 40px;
+    color: #fff;
+    font-size: 80px;
+    font-family: "Now bold";
+    text-shadow: #000 0 0 20px;
+    text-align: right;
+}
+
+.basic {
+    padding: 50px 100px;
+    font-size: 25px;
+    text-align: justify;
+    height: auto;
+}
+
+.basic li {
+    margin-left: 30px;
+}
+
+.basic h1 {
+    font-family: "Now bold";
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+.basic h2 {
+    color: #99b54f;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-top: -50px;
+}
+
+
+.mission {
+    height: auto;
+}
+
+.box {
+    margin: 20px;
+    background-color: #57b0a6;
+    border-radius: 20px;
+    padding: 50px;
+    text-align: center;
+    font-family: "Aileron";
+}
+
+.technologie {
+    background-image: url(img/mains.png);
+    background-repeat: repeat-y;
+    background-position: right top;
+    background-size: 30%;
+    padding-bottom: 150px;
+}
+
+.technologie > .content > div {
+    width: 60%;
+}
+
+.emballages {
+    background-image: url("img/emballages.jpg");
+    background-size: cover;
+}
+
+.emballages h1, .emballages h2 {
+    text-align: right;
+}
+
+.emballages div {
+    text-align: right;
+    width: 100%;
+}
+
+.emballages p {
+    text-align: justify;
+    width: 40%;
+    display: inline-block;
+    margin-right: 0;
+}
+
+.donnees {
+    background-image: url("img/donnees.jpg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: auto 80%;
+}
+
+.donnees p {
+    width: 60%;
+}
+
+.reconnaissance {
+    background-image: url("img/reconnaissance.jpg");
+    background-size: cover;
+    background-position: bottom right;
+}
+
+.reconnaissance p {
+    width: 50%;
+}
+
+.livraison h1 {
+    width: 80%;
+}
+
+.livraison .content {
+    background-image: url("img/livraison.jpg");
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: bottom left;
+}
+
+.livraison .content > div {
+    text-align: right;
+}
+
+.livraison ul {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    width: 70%;
+    font-size: 20px;
+}
+
+.livraison p {
+    margin-bottom: 35px;
+}
+
+.pourquoi {
+    background-image: url("img/pourquoi.jpg");
+    background-size: cover;
+    background-position: 200px;
+}
+
+.pourquoi p, .pourquoi ul, .pourquoi h1 {
+    width: 55%;
+}
+
+.changement {
+    background-image: url("img/histoire.jpg");
+    background-size: cover;
+    background-position: 0 -150px;
+}
+
+.changement .content {
+
+    height: 70vh;
+    position: relative;
+}
+
+.changement h1 {
+    color: #fff;
+    font-size: 80px;
+    font-family: "Now bold";
+    text-shadow: #000 0 0 20px;
+}
+
+.changement h1:first-child {
+    position: absolute;
+    top: 120px;
+    left: 0;
+
+}
+
+.changement h1:last-child{
+    position: absolute;
+    bottom: 120px;
+    right: 0;
+}
+
+.qui .content {
+    background-color: #99b54f;
+    border-radius: 20px;
+    padding: 20px 30px;
+}
+
+.oui {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.oui div {
+    width: 70%;
+    margin-right: 50px;
+}
+
+.oui img {
+    border-radius: 20px;
+}
+
+.histoire h1 {
+    margin-top: 0;
+}
+
+.piliers .content > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+
+}
+
+.pilier {
+    text-align: center;
+    background-color: #99b54f;
+    border-radius: 20px;
+    padding: 10px;
+    padding-top: 50px;
+}
+
+.pilier img {
+    height: 100px;
+}
+
+.pilier h1 {
+    font-size: 30px;
+    font-family: "Aileron";
+    text-transform: none;
+}
+
+.pilier p {
+    font-size: 20px;
+}
+
+.demain {
+    background-image: url("img/demain.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: auto 80%;
+}
+
+.demain .content {
+    text-align: right;
+}
+
+.demain p {
+    display: inline-block;
+    width: 50%;
+    text-align: justify;
+}
+
+ul.time {
+    display: flex;
+    list-style: none;
+    background-color: #fff;
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.time img {
+    vertical-align: middle;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.time li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+}
+
+ul.vendre {
+    margin-top: 50px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    
+}
+
+.vendre li {
+    background-color: #fff;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+.comment .content div {
+    width: 50%;
+    display: inline-block;
+}
+
+.comment .content {
+    font-size: 20px;
+    text-align: justify;
+    background-image: url("img/comment.png");
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+    background-position: right bottom;
+}
+
+.comment h2 {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.comment .highlight {
+    margin: 50px 0;
+}
+
+.reprise .content div {
+    width: 100%;
+    text-align: right;
+}
+
+.reprise .content div > * {
+    width: 50%;
+    text-align: justify;
+    display: inline-block;
+}
+
+.reprise .content {
+    font-size: 20px;
+    text-align: justify;
+    background-image: url("img/reprise.png");
+    background-repeat: no-repeat;
+    background-size: auto 70%;
+    background-position: left bottom;
+}
+
+.reprise h2 {
+    text-align: center;
+    margin: 50px 0;
+}
+
+
+
+.vendre .content p {
+    width: 50%;
+    text-align: justify;
+    display: inline-block;
+    margin: 100px 0;
+}
+
+.vendre .content {
+    font-size: 20px;
+    text-align: justify;
+    background-image: url("img/casse.png");
+    background-repeat: no-repeat;
+    background-size: auto 70%;
+    background-position: right center;
+}
+
+.vendre h2 {
+    text-align: center;
+    margin: 100px 0;
+}
+
+.achat h1 {
+    font-family: "Aileron";
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 30px;
+}
+
+.indice {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+}
+
+.prix {
+    font-family: "Aileron";
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.points {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.stats {
+    display: flex;
+}
+
+.stats div {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 50px;
+}
+
+.stats img {
+    width: 100px;
+}
+
+.desc {
+    display: flex;
+    align-items: center;
+}
+
+.dessous {
+    text-transform: uppercase;
+    font-weight: bold;
+    border-top: solid 1px #000;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.dessous img {
+    height: 20px;
+    margin-left: 30px;
+    vertical-align: top;
+}
+
+.achat .content {
+    display: flex;
+    align-items: center;
+}
+
+
+.gauche {
+    display: flex;
+    margin-right: 30px;
+}
+
+.prev {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.prev div {
+    width: 100px;
+    height: 100px;
+    padding: 20px 30px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+.prev div img {
+    max-height: 100%;
+}
+
+.prev .both {
+    display: flex;
+    flex-direction: row;
+}
+
+.main_img {
+    padding: 20px 30px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin-left: 30px;
+    height: 100%;
+}
+
+.main_img img {
+    height: auto;
+    max-height: 500px;
+}
+
+.achat .highlight {
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+}
+
+.as {
+    display: none;
+}
+
+.choixlangue {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000c7;
+    top: 0;
+    left: 0;
+}
+
+.choixlangue div {
+    background-color: white;
+    width: 800px;
+    height: 300px;
+    margin: 150px auto;
+    border-radius: 50px;
+    padding: 100px;
+}
+
+.choixlangue h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.choixlangue select {
+    font-size: 30px;
+    background: none;
+    border: none;
+    text-align: left;
+    border-bottom: 1px solid #000;
+    width: 100%;
+}
+
+.choixlangue {
+    display: none;
+}

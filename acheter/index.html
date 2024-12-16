@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Phone Ethique</title>
+    <script src="../main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="content">
+            <a href="../" class="logo">
+                <img src="../img/logo.png" alt="Phone Ethique votre téléphone de demain">
+            </a>
+            <ul class="menu">
+                <li><a href="../acheter" class="select">Acheter</a></li>
+                <li><a href="../apropos">À propos</a></li>
+                <li><a href="../histoire">Notre histoire</a></li>
+                <li><a href="../recyclez">Recyclez votre smartphone</a></li>
+            </ul>
+            <div>
+                <a href="" class="panier">
+                    <img src="../img/panier.png" alt="Panier"></a>
+                <a href="" class="langue">
+                    <img src="../img/fr.jpg" alt="Langue"><p>FR</p>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="grey">
+        <div class="content">
+
+            <h1>Nos produits</h1>
+            <section class="categories acheter">
+             <a href="smartphones" class="card">
+                 <h1>Smartphones</h1>
+                 <img src="../img/smartphone.png" alt="">
+                 <p href="">Acheter un smartphone</p>
+             </a>
+             <a class="card" href="accessoires/">
+                 <h1>Accessoires</h1>
+                 <img src="../img/accessoires.png" alt="">
+                 <p href="">Acheter un accessoire</p>
+             </a>
+         </section>
+        </div>
+    </main>
+    <footer>
+        <div class="content">
+
+            <div>
+                <a href="#" class="logo">
+                    <img src="../img/logo.png" alt="Phone Ethique votre téléphone de demain">
+                </a>
+                <div>
+                    <h1>Une question ?</h1>
+                    <ul>
+                        <li><a href="mailto:phoneethique@gmail.com"><img src="../img/contact.png" alt="">Nous contacter</a></li>
+                        <li><img src="../img/phone.png" alt="">Téléphone: +33 56 27 72 87</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Nos services</h1>
+                    <ul>
+                        <li>Livraison</li>
+                        <li>Retours</li>
+                        <li>Reparation</li>
+                    </ul>
+                </div>
+                <img class="certif" src="../img/certif.png" alt="Certification développement durable Octobre 2024">
+            </div>
+            <div>
+                <div class="reseaux">
+                    <a href="">
+                        <img src="../img/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="">
+                        <img src="../img/insta.png" alt="Instagram">
+                    </a>
+                    <a href="">
+                        <img src="../img/youtube.png" alt="Youtube">
+                    </a>
+                    <a href="">
+                        <img src="../img/linkedin.png" alt="Linkedin">
+                    </a>
+                </div>
+                <a href="../cgv">Conditions de vente</a>
+                <a href="../confidentialite">Politique de confidentialité</a>
+                <a href="../mentions">Mentions légales</a>
+            </div>
+        </div>
+    </footer>
+    <aside class="choixlangue" id="lang">
+        <div id="inside">
+            <h1>Sélectionnez votre localisation :</h1>
+            <select name="localisation" id="localisation" onchange="updatelang();">
+                <option value="fr">France</option>
+                <option value="as">Asie</option>
+            </select>
+        </div>
+    </aside>
+</body>
+</html>

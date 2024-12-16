@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Phone Ethique</title>
+</head>
+<body>
+    <header>
+        <div class="content">
+
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="Phone Ethique votre téléphone de demain">
+            </a>
+            <ul class="menu">
+                <li><a href="acheter">Acheter</a></li>
+                <li><a href="apropos">À propos</a></li>
+                <li><a href="histoire">Notre histoire</a></li>
+                <li><a href="recyclez">Recyclez votre smartphone</a></li>
+            </ul>
+            <div>
+                <a href="" class="panier">
+                    <img src="img/panier.png" alt="Panier"></a>
+                <a href="" class="langue">
+                    <img src="img/fr.jpg" alt="Langue"><p>FR</p>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="promo">
+            <div class="content">
+                <img src="img/certif_vert.png" alt="">
+                <div class="circle">
+                    <p>100€ sur la reprise de votre smartphone</p>
+                </div>
+                <div class="promo_content">
+                    <p class="highlight orange">Promotion</p>
+                    <h1>La meilleure offre du 
+                        <br>Black Friday : 
+                        <br>c’est celle qui dure.</h1>
+                    <p class="small">100€ en plus sur la reprise de votre smartphone</p>
+                    <a href="" class="highlight blue">En savoir plus</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="content categories">
+                <a href="" class="card">
+                    <h1>Smartphones</h1>
+                    <img src="img/smartphone.png" alt="">
+                    <p href="">Acheter un smartphone</p>
+                </a>
+                <a class="card" href="">
+                    <h1>Accessoires</h1>
+                    <img src="img/accessoires.png" alt="">
+                    <p href="">Acheter un accessoire</p>
+                </a>
+            </div>
+        </section>
+        <section class="">
+            <div class="content affaires">
+
+                <h1>Des téléphones qui ne 
+                    <br>lâchent pas l’affaire</h1>
+                <div>
+                    <p>L’obsolescence rapide ? Très peu pour nous. Nos téléphones sont pensés pour durer, avec des batteries solides qui rallongent leur vie et réduisent les déchets.</p>
+                    <p>Un choix responsable pour vous et pour la planète. </p>
+                    <img src="img/affaire1.jpg" alt="">
+                </div>
+                <img src="img/affaire2.jpg" alt="">
+            </div>
+        </section>
+        <section class="prefere fr">
+            <div class="content">
+
+                <h1>Le smartphone préféré</h1>
+                <div>
+                    <div>
+                        <h2>E-Phone</h2>
+                        <p>Plus durable</p>
+                        <p>plus économique</p>
+                        <p class="prix">299,99€</p>
+                        <a href="acheter/smartphones/fr/e-phone/" class="highlight blue">Découvrez E-Phone</a>
+                    </div>
+                    <div>
+                        <img src="img/prefere.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="prefere as">
+            <div class="content">
+
+                <h1>Le smartphone préféré</h1>
+                <div>
+                    <div>
+                        <h2>E-Phone</h2>
+                        <p>Plus durable</p>
+                        <p>plus économique</p>
+                        <p class="prix">259,99€</p>
+                        <a href="acheter/smartphones/as/e-phone/" class="highlight blue">Découvrez E-Phone</a>
+                    </div>
+                    <div>
+                        <img src="img/prefere.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="content">
+
+            <div>
+                <a href="#" class="logo">
+                    <img src="img/logo.png" alt="Phone Ethique votre téléphone de demain">
+                </a>
+                <div>
+                    <h1>Une question ?</h1>
+                    <ul>
+                        <li><a href="mailto:phoneethique@gmail.com"><img src="img/contact.png" alt="">Nous contacter</a></li>
+                        <li><img src="img/phone.png" alt="">Téléphone: +33 56 27 72 87</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Nos services</h1>
+                    <ul>
+                        <li>Livraison</li>
+                        <li>Retours</li>
+                        <li>Reparation</li>
+                    </ul>
+                </div>
+                <img class="certif" src="img/certif.png" alt="Certification développement durable Octobre 2024">
+            </div>
+            <div>
+                <div class="reseaux">
+                    <a href="">
+                        <img src="img/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="">
+                        <img src="img/insta.png" alt="Instagram">
+                    </a>
+                    <a href="">
+                        <img src="img/youtube.png" alt="Youtube">
+                    </a>
+                    <a href="">
+                        <img src="img/linkedin.png" alt="Linkedin">
+                    </a>
+                </div>
+                <a href="cgv">Conditions de vente</a>
+                <a href="confidentialite">Politique de confidentialité</a>
+                <a href="mentions">Mentions légales</a>
+            </div>
+        </div>
+    </footer>
+    <aside class="choixlangue" id="lang">
+        <div id="inside">
+            <h1>Sélectionnez votre localisation :</h1>
+            <select name="localisation" id="localisation" onchange="updatelang();">
+                <option value="fr">France</option>
+                <option value="as">Asie</option>
+            </select>
+        </div>
+    </aside>
+</body>
+</html>
