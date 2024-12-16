@@ -32,17 +32,17 @@
         <div class="content fr">
             <h1>Nos accessoires</h1>
             <div class="produits">
-                <a href="" class="produit accessoire">
+                <a href="" class="produit accessoire" onclick="add_article('chargeur')">
                     <img src="../../img/chargeur.png" alt="">
                     <p class="nom">Chargeur</p>
                     <p class="highlight">Ajouter au panier</p>
                 </a>
-                <a href="" class="produit accessoire">
+                <a href="" class="produit accessoire" onclick="add_article('coque-e-phone')">
                     <img src="../../img/coqueblanc.png" alt="">
                     <p class="nom">coque e-phone</p>
                     <p class="highlight">Ajouter au panier</p>
                 </a>
-                <a href="" class="produit accessoire">
+                <a href="" class="produit accessoire" onclick="add_article('coque-green-phone')">
                     <img src="../../img/coqueorange.png" alt="">
                     <p class="nom">Coque Green Phone</p>
                     <p class="highlight">Ajouter au panier</p>
@@ -52,32 +52,32 @@
         <div class="content as">
             <h1>Nos accessoires</h1>
             <div class="produits">
-                <a href="" class="produit accessoire">
+                <a href="" class="produit accessoire" onclick="add_article('chargeur')">
                     <img src="../../img/chargeur.png" alt="">
                     <p class="nom">Chargeur</p>
                     <p class="highlight">Ajouter au panier</p>
                 </a>
-                <a href="" class="produit accessoire">
+                <a href="" class="produit accessoire" onclick="add_article('coque-e-phone')">
                     <img src="../../img/coqueblanc.png" alt="">
                     <p class="nom">coque e-phone</p>
                     <p class="highlight">Ajouter au panier</p>
                 </a>
-                <a href="" class="produit accessoire">
+                <a href="" class="produit accessoire" onclick="add_article('coque-phone-plus')">
                     <img src="../../img/coqueorange.png" alt="">
                     <p class="nom">Coque phone Plus</p>
                     <p class="highlight">Ajouter au panier</p>
                 </a>
-                <a href="" class="produit accessoire">
+                <a href="" class="produit accessoire" onclick="add_article('coque-s-phone')">
                     <img src="../../img/coquecuir.png" alt="">
                     <p class="nom">Coque S-phone</p>
                     <p class="highlight">Ajouter au panier</p>
                 </a>
-                <a href="" class="produit accessoire">
+                <a href="" class="produit accessoire" onclick="add_article('coque-nea-phone')">
                     <img src="../../img/coquenoir.png" alt="">
                     <p class="nom">Coque Nea Phone</p>
                     <p class="highlight">Ajouter au panier</p>
                 </a>
-                <a href="" class="produit accessoire">
+                <a href="" class="produit accessoire" onclick="add_article('coque-eco-phone')">
                     <img src="../../img/coqueg.png" alt="">
                     <p class="nom">Coque Eco+ Phone</p>
                     <p class="highlight">Ajouter au panier</p>
@@ -139,6 +139,46 @@
                 <option value="as">Asie</option>
             </select>
         </div>
+    </aside>
+    <aside class="paniera" id="panierdehors">
+        <div id="bla">
+            <div class="suggestions">
+                <div>
+                    <div>
+                        <img src="../../img/chargeur.png" alt="">
+                        <p>Chargeur</p>
+                    </div>
+                    <a href="" class="highlight">Ajouter au panier</a>
+                </div>
+                <div>
+                    <div>
+                        <img src="../../img/coqueorange.png" alt="">
+                        <p>Coque Phone Plus</p>
+                    </div>
+                    <a href="" class="highlight">Ajouter au panier</a>
+                </div>
+                <div>
+                    <div>
+                        <img src="../../img/coqueblanc.png" alt="">
+                        <p>Coque E-Phone</p>
+                    </div>
+                    <a href="" class="highlight">Ajouter au panier</a>
+                </div>
+            </div>
+            <div class="selection">
+                <a href="" id="croix"><img class="croix" src="../../img/croix.png" alt=""></a>
+                <h1>Panier</h1>
+                <div class="qwe">
+                    <div class="liste_panier">
+                    </div>
+                    <div class="payer">
+                        <p>Livraison offerte</p>
+                        <a href="" class="highlight">Commander | <span id="priceqwe">0</span>€</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </aside>
 </body>
 </html>
